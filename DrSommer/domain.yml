@@ -11,23 +11,37 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hallo, hier ist Dr.Sommer"
+  - text: "Hallo, hier ist Botto"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  - text: "Hier ist etwas um dich aufzumuntern:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "Hat das geholfen?"
 
   utter_happy:
   - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "until next time"
+  - text: "Bis bald."
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_greet_with_name:
+    - text: "Hallo, {username}. Wie geht es dir?"
+
+entities:
+  - username 
+
+slots:
+  username:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: username
 
 session_config:
   session_expiration_time: 60

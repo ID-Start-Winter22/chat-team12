@@ -4,56 +4,59 @@ nlu:
 - intent: greet
   examples: |
     - hey
-    - hello
+    - hallo
     - hi
-    - hello there
-    - good morning
-    - good evening
+    - hallihallo
+    - guten morgen
+    - guten abend
     - moin
     - hey there
-    - let's go
+    - guten tag
     - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - gutenmorgen
+    - gutenabend
+    - servus
 
 - intent: goodbye
   examples: |
     - cu
-    - good by
-    - cee you later
-    - good night
+    - cya
+    - tschüss
+    - ciao
     - bye
     - goodbye
-    - have a nice day
-    - see you around
+    - gute nacht
+    - bis später
     - bye bye
-    - see you later
+    - bb
 
 - intent: affirm
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - ja
+    - j
+    - yup
+    - ja klar
+    - hört sich gut an
+    - ok
+    - das stimmt
+    - 
 
 - intent: deny
   examples: |
     - no
     - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - nein
+    - ich glaube nicht
+    - nee
+    - auf keinen fall
+    - nicht wirklich
+    - kein bock
 
 - intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
+    - perfekt
+    - gut
+    - super
     - feeling like a king
     - wonderful
     - I am feeling very good
@@ -68,24 +71,37 @@ nlu:
 
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
+    - mein tag war richtig scheiße
+    - mein tag war richtig anstrengend
+    - Ich bin traurig
+    - mir gehts heute nicht so gut
     - I am disappointed
     - super sad
     - I'm so sad
-    - sad
+    - sad 
     - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - unglücklich
+    - nicht gut
+    - nicht so gut
+    - sehr traurig
+    - scheiße
+    - gestresst
+    - ich bin gestresst
+    - ich bin nervös
+    - mir geht's schlecht
+    - schlecht
 
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - bist du ein bot?
+    - bist du ein mensch?
+    - spreche ich mit einem bot?
+    - sprech ich mit einem menschen?
+    - was bist du?
+
+- intent: my_name_is
+  examples: |
+    - Mein Name ist [Suhal](username)
+    - Ich heiße [Tarek](username)
+    - [Theo](username)
+    - Ich bin [Ash](username)

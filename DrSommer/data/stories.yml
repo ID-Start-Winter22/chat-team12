@@ -9,17 +9,17 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
-- story: sad path 1
+- story: sad path with name
   steps:
-  - intent: greet
-  - action: utter_greet
+  - intent: my_name_is
+  - action: utter_greet_with_name
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
 
-- story: sad path 2
+- story: sad path 
   steps:
   - intent: greet
   - action: utter_greet
