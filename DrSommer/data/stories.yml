@@ -2,29 +2,36 @@ version: "3.0"
 
 stories:
 
-- story: happy path
+- story: greet_with_name
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-
-- story: sad path with name
-  steps:
   - intent: my_name_is
+  - action: action_store_name
   - action: utter_greet_with_name
   - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+  - action: utter_evaluate
+  - intent: stresslevel
+  - action: utter_exercise_question
   - intent: affirm
-  - action: utter_happy
+  - action: utter_exercise
 
 - story: sad path 
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - action: utter_evaluate
+  - intent: stresslevel
+  - action: utter_exercise_question
+  - intent: affirm
+  - action: utter_exercise
+
+- story: help path
+  steps: 
+  - intent: get_help
+  - action: utter_evaluate
+  - intent: stresslevel
+  - action: utter_exercise_question
+  - intent: affirm
+  - action: utter_exercise

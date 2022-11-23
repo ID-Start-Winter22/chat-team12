@@ -105,3 +105,25 @@ nlu:
     - Ich heiße [Tarek](username)
     - [Theo](username)
     - Ich bin [Ash](username)
+
+- intent: get_help
+  examples: |
+    - Mir geht's grad richtig scheiße
+    - Ich brauche Rat
+    - Ich suche rat.
+    - ich bin gestresst
+    - ich brauch hilfe
+    - Hilfe!
+    - Ich brauche rat
+    - bin anxious
+    - ich habe Angst
+    - mir gehts nicht gut
+
+- intent: stresslevel
+  examples: |
+    - 30
+    - 50%
+    - 75 %
+    - 80 prozent
+   
+    

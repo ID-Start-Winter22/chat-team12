@@ -9,29 +9,45 @@ intents:
   - mood_unhappy
   - bot_challenge
   - my_name_is
+  - get_help
+  - stresslevel
+
+actions:
+  - action_store_name
+  - action_get_name
 
 responses:
   utter_greet:
-  - text: "Hallo, hier ist Botto"
+  - text: "Hallo, hier ist Botto."
+  - text: "Hallo, wie geht es dir gerade?"
 
-  utter_cheer_up:
-  - text: "Hier ist etwas um dich aufzumuntern:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+#  utter_cheer_up:
+#  - text: "Hier ist etwas um dich aufzumuntern:"
+#    image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Hat das geholfen?"
+  - text: "Wie fühlst du dich jetzt?"
 
-  utter_happy:
-  - text: "Great, carry on!"
+#  utter_happy:
+#  - text: "Great, carry on!"
 
   utter_goodbye:
   - text: "Bis bald."
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "Ich bin ein Chatbot, der gebaut wurde um dir in deinem Alltag zu helfen wenn es dir nicht gut geht."
 
   utter_greet_with_name:
-    - text: "Hallo, {username}. Wie geht es dir?"
+  - text: "Hallo, {username}. Wie geht es dir?"
+
+  utter_evaluate:
+  - text: "Wie hoch schätzt du deinen Stresspegel auf einer Skala von 0-100% ein?"
+
+  utter_exercise_question:
+  - text: "Wollen wir eine Atemübung machen?"
+
+  utter_exercise:
+  - text: "Versuch für 4 Sekunden einzuatmen, 7 Sekunden zu halten und 8 Sekunden lang auszuatmen."
 
 entities:
   - username 

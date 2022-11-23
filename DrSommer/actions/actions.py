@@ -25,3 +25,30 @@
 #         dispatcher.utter_message(text="Hello World!")
 #
 #         return []
+
+
+class ActionStoreUserName(Action):
+
+     def name(self) -> Text:
+         return "action_store_name"
+         
+     def run(self, dispatcher, tracker, domain):
+        username = tracker.get_slot("username")
+        print("Sender ID: ", tracker.sender_id)
+
+        return []
+
+
+class ActionUserName(Action):
+
+     def name(self) -> Text:
+         return "action_get_name"
+
+     def run(self, dispatcher, tracker, domain):
+        username = tracker.get_slot("username")
+        if not username :
+            dispatcher.utter_message(" Du hast mir Deinen Namen nicht gesagt.")
+        else:
+            dispatcher.utter_message(' Du bist {}'.format(username))
+
+        return []
