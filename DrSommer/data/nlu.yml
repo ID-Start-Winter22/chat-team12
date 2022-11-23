@@ -39,7 +39,9 @@ nlu:
     - hört sich gut an
     - ok
     - das stimmt
-    - 
+    - k
+    - done
+    - fertig
 
 - intent: deny
   examples: |
@@ -92,6 +94,18 @@ nlu:
     - schlecht
     - beschissen
     - immer noch ziemlich sad
+
+- intent: mood_better
+  examples: |
+    - etwas besser
+    - better
+    - ein bisschen besser
+    - ganz ok jetzt
+    - ich glaube jetzt passts
+    - passt schon
+    - ich hab mich etwas beruhigt
+    - Ich denke ich kann es jetzt schaffen
+
 
 - intent: bot_challenge
   examples: |
