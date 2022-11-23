@@ -121,6 +121,7 @@ nlu:
     - Ich heiße [Tarek](username)
     - [Theo](username)
     - Ich bin [Ash](username)
+    - Hier ist [Tim](username)
 
 - intent: get_help
   examples: |
