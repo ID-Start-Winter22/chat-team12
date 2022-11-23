@@ -90,6 +90,8 @@ nlu:
     - ich bin nervös
     - mir geht's schlecht
     - schlecht
+    - beschissen
+    - immer noch ziemlich sad
 
 - intent: bot_challenge
   examples: |
