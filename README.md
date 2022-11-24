@@ -7,7 +7,7 @@ Genau hier kommt "Botto" unser Chatbot ins Spiel. Er berät und stellt Übungen 
 
 ## Über uns
 
-Mentale Gesundheit ist ein wichtiges Thema, das immer mehr in den Vordergrund der Gesellschaft rückt und auch uns sehr am Herzen liegt. Unser Team zählt selber zur Zielgruppe und hat dementsprechend viel Kontakt zu möglichen Usern. Nach dem regen UX Prozess in dem Interviews, aber auch lockere Gespräche geführt worden sind, haben wir einen breit gefächerten Insight über mögliche Probleme und Ziele bekommen.
+Mentale Gesundheit ist ein wichtiges Thema, das immer mehr in den Vordergrund der Gesellschaft rückt und auch uns sehr am Herzen liegt. Unser Team zählt selber zur Zielgruppe und hat dementsprechend viel Kontakt zu möglichen Usern. Über qualitative Interviews im Rahmen von unserem user research, wie auch auch lockere Gespräche mit Personen in unserem Umfeld, haben wir einen breit gefächerten Insight über mögliche Probleme und Ziele bekommen.
 Zudem besteht Therapie-Erfahrung bei einigen Team-Mitgliedern, die uns wichtige Resourcen geliefert hat. 
 
 Wir sind Ash, Tarek, Theo und Suhal und hoffen mit Hilfe von Botto die Angst der Menschen lindern zu können. 
