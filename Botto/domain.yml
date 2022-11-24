@@ -23,6 +23,7 @@ actions:
 responses:
   utter_greet:
   - text: "Hallo, hier ist Botto."
+    image: "https://user-images.githubusercontent.com/114647698/203575779-469b2361-961c-443b-8513-8aa337d88b43.png"
 
   utter_response:
   - text: "Hallo! Wie geht es dir :-) ?"
