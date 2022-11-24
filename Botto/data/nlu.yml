@@ -17,6 +17,15 @@ nlu:
     - gutenabend
     - servus
 
+- intent: greet_hi
+  examples: |
+    - ey
+    - hey botto
+    - botto otto
+    - hi bottchen
+    - hallo botto
+    - hiii
+
 - intent: goodbye
   examples: |
     - cu
@@ -29,6 +38,22 @@ nlu:
     - bis später
     - bye bye
     - bb
+    - ciao ciao
+
+- intent: indecisive
+  examples: |
+    - hm
+    - hm...
+    - ich weiss nicht
+    - ich weiß nicht
+    - ich weiß es nicht
+    - kann ich dir nicht sagen
+    - schwer zu sagen
+    - kp
+    - kein plan
+    - keine ahnung
+    - idk
+    - ich wünschte ich würde es wissen
 
 - intent: affirm
   examples: |
@@ -39,7 +64,7 @@ nlu:
     - hört sich gut an
     - ok
     - das stimmt
-    - 
+    - jo
 
 - intent: deny
   examples: |
@@ -51,6 +76,7 @@ nlu:
     - auf keinen fall
     - nicht wirklich
     - kein bock
+    - nö
 
 - intent: mood_great
   examples: |

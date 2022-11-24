@@ -2,7 +2,9 @@ version: "3.0"
 
 intents:
   - greet
+  - greet_hi
   - goodbye
+  - indecisive
   - affirm
   - deny
   - mood_great
@@ -12,6 +14,7 @@ intents:
   - my_name_is
   - get_help
   - stresslevel
+ 
 
 actions:
   - action_store_name
@@ -20,7 +23,18 @@ actions:
 responses:
   utter_greet:
   - text: "Hallo, hier ist Botto."
-  - text: "Hallo, wie geht es dir gerade?"
+
+  utter_response:
+  - text: "Hallo! Wie geht es dir :-) ?"
+
+  utter_lets_find_out_tgt:
+  - text: "Wollen wir es gemeinsam herausfinden?"
+
+  utter_did_smth_happen:
+  - text: "Ist heute etwas passiert, was dich besonders gefreut hat?"
+
+  utter_support_response:
+  - text: "Das klingt wirklich toll. Ist auch etwas passiert, das du weniger gut fandest?"
 
 #  utter_cheer_up:
 #  - text: "Hier ist etwas um dich aufzumuntern:"

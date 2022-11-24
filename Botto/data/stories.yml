@@ -50,4 +50,17 @@ stories:
   - action: utter_goodbye
 
 
+- story: how do i feel (positive path)
+  steps:
+  - intent: greet_hi
+  - action: utter_response
+  - intent: indecisive
+  - action: utter_lets_find_out_tgt
+  - intent: affirm
+  - action: utter_did_smth_happen
+  - intent: affirm
+  - action: utter_support_response
+  - intent: deny
+  - action: utter_relieved
+  - action: utter_goodbye
 
