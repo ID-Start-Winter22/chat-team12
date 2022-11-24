@@ -2,7 +2,7 @@
 
 ## Über den Bot
 
-Unser Chatbot wird designed und entwickelt um Jugendliche und jungen Erwachsene in alltäglichen Situationen zu unterstützen. Was für den einen eine einfache Präsentation vor den Kursteilnehmern ist, stellt für den anderen eine Angstsituation dar. 
+Unser Chatbot wird designed und entwickelt um Jugendliche und junge Erwachsene in alltäglichen Situationen zu unterstützen. Was für den einen eine einfache Präsentation vor den Kursteilnehmern ist, stellt für den anderen eine Angstsituation dar. 
 Genau hier kommt "Botto" unser Chatbot ins Spiel. Er berät und stellt Übungen zur Verfügung, die im therapeutischen Umfeld erforscht und wissenschaftlich erwiesen sind. Dabei beachtet er stets die Höhe bzw. Stärke des Angst-Niveaus. 
 
 ## Über uns
