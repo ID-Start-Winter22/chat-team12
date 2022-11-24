@@ -6,6 +6,7 @@ intents:
   - affirm
   - deny
   - mood_great
+  - mood_better
   - mood_unhappy
   - bot_challenge
   - my_name_is
@@ -28,11 +29,13 @@ responses:
   utter_did_that_help:
   - text: "Wie fühlst du dich jetzt?"
 
-#  utter_happy:
-#  - text: "Great, carry on!"
+  utter_confirm:
+  - text: "Das ist schön!"
 
   utter_goodbye:
   - text: "Bis bald."
+  - text: "Bis zum nächsten mal!"
+  - text: "Meld dich wenn du meine Hilfe brauchst."
 
   utter_iamabot:
   - text: "Ich bin ein Chatbot, der gebaut wurde um dir in deinem Alltag zu helfen wenn es dir nicht gut geht."

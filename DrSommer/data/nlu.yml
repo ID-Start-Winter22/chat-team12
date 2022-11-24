@@ -39,7 +39,14 @@ nlu:
     - hört sich gut an
     - ok
     - das stimmt
-    - 
+    - k
+    - done
+    - fertig
+    - alles klar
+    - meinetwegen
+    - wir können es versuchen
+    - Probieren wir es
+    - ich kanns probieren
 
 - intent: deny
   examples: |
@@ -68,6 +75,17 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+
+- intent: mood_better
+  examples: |
+    - besser
+    - etwas besser
+    - Ein bisschen besser
+    - ganz ok
+    - in Ordnung
+    - Ich glaube besser
+    - ich denke mir gehts wieder besser
+    - Mit geht es besser
 
 - intent: mood_unhappy
   examples: |
@@ -105,6 +123,7 @@ nlu:
     - Ich heiße [Tarek](username)
     - [Theo](username)
     - Ich bin [Ash](username)
+    - Hier ist [Tim](username)
 
 - intent: get_help
   examples: |
