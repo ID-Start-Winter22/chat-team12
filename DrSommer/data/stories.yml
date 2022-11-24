@@ -27,6 +27,13 @@ stories:
   - action: utter_exercise_question
   - intent: affirm
   - action: utter_exercise
+  - intent: affirm
+  - action: utter_did_that_help
+  - intent: mood_better
+  - action: utter_relieved
+  - action: utter_goodbye
+
+
 
 - story: help path
   steps: 
@@ -36,4 +43,11 @@ stories:
   - action: utter_exercise_question
   - intent: affirm
   - action: utter_exercise
+  - intent: affirm
+  - action: utter_did_that_help
+  - intent: mood_better
+  - action: utter_relieved
+  - action: utter_goodbye
+
+
 
