@@ -76,16 +76,6 @@ nlu:
     - so good
     - so perfect
 
-- intent: mood_better
-  examples: |
-    - besser
-    - etwas besser
-    - Ein bisschen besser
-    - ganz ok
-    - in Ordnung
-    - Ich glaube besser
-    - ich denke mir gehts wieder besser
-    - Mit geht es besser
 
 - intent: mood_unhappy
   examples: |

@@ -6,7 +6,6 @@ intents:
   - affirm
   - deny
   - mood_great
-  - mood_better
   - mood_unhappy
   - bot_challenge
   - my_name_is
