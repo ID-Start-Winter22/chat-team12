@@ -2,15 +2,19 @@ version: "3.0"
 
 intents:
   - greet
+  - greet_hi
   - goodbye
+  - indecisive
   - affirm
   - deny
   - mood_great
   - mood_unhappy
+  - mood_better
   - bot_challenge
   - my_name_is
   - get_help
   - stresslevel
+ 
 
 actions:
   - action_store_name
@@ -19,7 +23,19 @@ actions:
 responses:
   utter_greet:
   - text: "Hallo, hier ist Botto."
-  - text: "Hallo, wie geht es dir gerade?"
+    image: "https://user-images.githubusercontent.com/114647698/203575779-469b2361-961c-443b-8513-8aa337d88b43.png"
+
+  utter_response:
+  - text: "Hallo! Wie geht es dir :-) ?"
+
+  utter_lets_find_out_tgt:
+  - text: "Wollen wir es gemeinsam herausfinden?"
+
+  utter_did_smth_happen:
+  - text: "Ist heute etwas passiert, was dich besonders gefreut hat?"
+
+  utter_support_response:
+  - text: "Das klingt wirklich toll. Ist auch etwas passiert, das du weniger gut fandest?"
 
 #  utter_cheer_up:
 #  - text: "Hier ist etwas um dich aufzumuntern:"
@@ -28,12 +44,14 @@ responses:
   utter_did_that_help:
   - text: "Wie fühlst du dich jetzt?"
 
-#  utter_happy:
-#  - text: "Great, carry on!"
+  utter_relieved:
+  - text: "Das ist schön!"
 
   utter_goodbye:
   - text: "Bis bald."
-
+  - text: "Bis zum nächsten mal."
+  - text: "Melde dich gerne wieder wenn du meine Hilfe brauchst."
+  
   utter_iamabot:
   - text: "Ich bin ein Chatbot, der gebaut wurde um dir in deinem Alltag zu helfen wenn es dir nicht gut geht."
 
