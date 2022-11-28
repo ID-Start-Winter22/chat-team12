@@ -8,17 +8,25 @@
     <link rel="icon" type="image/x-icon" href="botto.ico">
     <title>Rasa Chatbot</title>
 </head>
-<body>
+<body style="background-color: #87cefa;">
+    <h1>Hallo, hier ist Botto!</h1>
+    Herzlich Willkommen zur Botto-Selbsthilfe. Hier wirst du geholfen.
+    <div>
+        <img src="botto.png" width="400" height="400"/>
+    </div>
+    
+    <font face="futura">
+        Sag Botto Hallo!
+    </font>
     <div 
         id="rasa-chat-widget" 
         data-websocket-url="http://localhost:5005/"  
         data-height=580
         data-avatar-url="./botto.png"
-        data-avatar-background="#FFFFFF"
+        data-avatar-background="#87cefa"
         data-primary="#24b760"
         data-default-open="true"
         data-primary-highlight="##c4d32b">
-        
     </div>
     <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
 </body>
