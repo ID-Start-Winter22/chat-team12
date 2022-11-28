@@ -17,8 +17,8 @@ intents:
  
 
 actions:
-  - action_store_name
   - action_get_name
+  - action_ask_with_name
 
 responses:
   utter_greet:
@@ -62,13 +62,13 @@ responses:
   - text: "Wie hoch schätzt du deinen Stresspegel auf einer Skala von 0-100% ein?"
 
   utter_exercise_question:
-  - text: "Wollen wir eine Atemübung machen?"
+  - text: "Wollen wir eine Atemübung machen, {username}?"
 
   utter_exercise:
   - text: "Versuch für 4 Sekunden einzuatmen, 7 Sekunden zu halten und 8 Sekunden lang auszuatmen."
 
 entities:
-  - username 
+  - username
 
 slots:
   username:

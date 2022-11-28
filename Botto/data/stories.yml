@@ -7,7 +7,7 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: my_name_is
-  - action: action_store_name
+  - action: action_get_name
   - action: utter_greet_with_name
   - intent: mood_unhappy
   - action: utter_evaluate
@@ -53,7 +53,7 @@ stories:
 - story: how do i feel (positive path)
   steps:
   - intent: greet_hi
-  - action: utter_response
+  - action: action_ask_with_name
   - intent: indecisive
   - action: utter_lets_find_out_tgt
   - intent: affirm
