@@ -14,11 +14,13 @@ intents:
   - my_name_is
   - get_help
   - stresslevel
+  - get_gif
  
 
 actions:
   - action_get_name
   - action_ask_with_name
+  - action_get_gif
 
 responses:
   utter_greet:
@@ -69,6 +71,7 @@ responses:
 
 entities:
   - username
+  - searchTag
 
 slots:
   username:
@@ -77,6 +80,12 @@ slots:
     mappings:
     - type: from_entity
       entity: username
+  searchTag:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: searchTag
 
 session_config:
   session_expiration_time: 60

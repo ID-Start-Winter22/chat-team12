@@ -36,7 +36,7 @@ stories:
 
 
 - story: help path
-  steps: 
+  steps:
   - intent: get_help
   - action: utter_evaluate
   - intent: stresslevel
@@ -64,3 +64,11 @@ stories:
   - action: utter_relieved
   - action: utter_goodbye
 
+- story: show me a gif
+  steps:
+  - intent: get_gif
+  - action: action_get_gif
+  - action: utter_did_that_help
+  - intent: mood_better
+  - action: utter_relieved
+  - action: utter_goodbye

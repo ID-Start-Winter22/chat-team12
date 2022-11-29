@@ -13,6 +13,9 @@ from rasa_sdk.executor import CollectingDispatcher
 
 from typing import Any, Text, Dict, List
 
+import json
+from urllib import parse, request
+
 
 class ActionUserName(Action):
 
@@ -44,4 +47,35 @@ class ActionHAskWithName(Action):
         else:
             dispatcher.utter_message(text="Hallo " + username + ", wie geht es dir?")
 
+        return []
+
+class ActionGetGiphyGif(Action):
+
+    def name(self) -> Text:
+        return "action_get_gif"
+
+    def run(self, dispatcher, tracker, domain):
+        #url = "http://api.giphy.com/v1/gifs/search"
+        url = "http://api.giphy.com/v1/gifs/random"
+
+        searchTag = tracker.get_slot("searchTag")
+        #searchTag = "mental health"
+
+        params = parse.urlencode({
+        "tag": searchTag,
+        "api_key": "22dBtq030RTkmgFArEvXTUb46eutC3JZ",
+        #"limit": "1"
+        })
+
+        with request.urlopen("".join((url, "?", params))) as response:
+            data = json.loads(response.read())
+
+
+        #image_url = data['data'][0]['images']['original']['url']
+        image_url = data['data']['images']['original']['url']
+
+        #print(json.dumps(image_url, sort_keys=True, indent=4))
+        print(image_url)
+
+        dispatcher.utter_message(image=image_url)
         return []
