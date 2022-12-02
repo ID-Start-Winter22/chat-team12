@@ -167,5 +167,17 @@ nlu:
     - 50%
     - 75 %
     - 80 prozent
+
+- intent: selbstmordgedanke
+  examples: |
+    - ich möchte sterben
+    - Ich überlege, mich umzubringen
+    - ich will nicht mehr leben
+    - ich wünschte ich wäre tot
+    - Tod
+    - I want to die
+    - i don't wanna live anymore
+    - i dont wanna live
+    - I dun want to keep on living
    
     
