@@ -150,11 +150,12 @@ nlu:
 
 - intent: get_gif
   examples: |
-    - Ich suche [Ryan Gosling](searchTag)
+    - Ich suche [cute animals](searchTag)
     - Gib mir [mentale Gesundheit](searchTag)
     - Zeig mir [süße Hunde](searchTag)
     - Zeigst du mir [funny cats](searchTag)
     - Ich wünsche mir [Pikachu](searchTag)
+    - [süße Tiere](searchTag)
     
 - intent: get_help
   examples: |
