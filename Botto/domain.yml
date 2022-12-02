@@ -15,11 +15,13 @@ intents:
   - get_help
   - stresslevel
   - selbstmordgedanke
+  - get_gif
  
 
 actions:
-  - action_store_name
   - action_get_name
+  - action_ask_with_name
+  - action_get_gif
 
 responses:
   utter_greet:
@@ -63,7 +65,7 @@ responses:
   - text: "Wie hoch schätzt du deinen Stresspegel auf einer Skala von 0-100% ein?"
 
   utter_exercise_question:
-  - text: "Wollen wir eine Atemübung machen?"
+  - text: "Wollen wir eine Atemübung machen, {username}?"
 
   utter_exercise:
   - text: "Versuch für 4 Sekunden einzuatmen, 7 Sekunden zu halten und 8 Sekunden lang auszuatmen."
@@ -72,7 +74,8 @@ responses:
   - text: "Wenn es dir sehr schlecht geht, kannst du jederzeit hier anrufen um mit jemandem zu reden, der dir weiterhelfen kann. 0800 / 655 3000"
 
 entities:
-  - username 
+  - username
+  - searchTag
 
 slots:
   username:
@@ -81,6 +84,12 @@ slots:
     mappings:
     - type: from_entity
       entity: username
+  searchTag:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: searchTag
 
 session_config:
   session_expiration_time: 60

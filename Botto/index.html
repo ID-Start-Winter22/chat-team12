@@ -6,19 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="botto.ico">
-    <title>Rasa Chatbot</title>
+    <title>Botto Chatbot</title>
 </head>
-<body>
+<body style="background-color: #87cefa;">
+
+    <font face="futura">   
+        <h1>Hallo, ich bin Botto!</h1>
+    <h2>Herzlich Willkommen zur Botto-Selbsthilfe. Hier wirst du geholfen.</h2>
+    </font>
+
+    <div>
+        <img src="botto.png" width="500" height="500"/>
+    </div>
+    
+    <div>
+    <font face="futura" size="200px">   
+        Sag Botto Hallo!
+    </font>
+    </div>
+
     <div 
         id="rasa-chat-widget" 
         data-websocket-url="http://localhost:5005/"  
         data-height=580
         data-avatar-url="./botto.png"
-        data-avatar-background="#FFFFFF"
+        data-avatar-background="#87cefa"
         data-primary="#24b760"
         data-default-open="true"
         data-primary-highlight="##c4d32b">
-        
     </div>
     <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
 </body>

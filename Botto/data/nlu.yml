@@ -148,6 +148,14 @@ nlu:
     - Ich bin [Ash](username)
     - Hier ist [Tim](username)
 
+- intent: get_gif
+  examples: |
+    - Ich suche [Ryan Gosling](searchTag)
+    - Gib mir [mentale Gesundheit](searchTag)
+    - Zeig mir [süße Hunde](searchTag)
+    - Zeigst du mir [funny cats](searchTag)
+    - Ich wünsche mir [Pikachu](searchTag)
+    
 - intent: get_help
   examples: |
     - Mir geht's grad richtig scheiße
