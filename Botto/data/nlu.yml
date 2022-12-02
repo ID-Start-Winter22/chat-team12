@@ -65,6 +65,10 @@ nlu:
     - ok
     - das stimmt
     - jo
+    - yes
+    - y
+    - klar
+    - okidoki
 
 - intent: deny
   examples: |
@@ -155,19 +159,25 @@ nlu:
     - Zeig mir [süße Hunde](searchTag)
     - Zeigst du mir [funny cats](searchTag)
     - Ich wünsche mir [Pikachu](searchTag)
+    - [Pikachu](searchTag)
+    - Ich will einen [Pokemon](searchTag)
+    - zeig mir [Salamander Pokemon](searchTag)
+    - ich will [Katzen](searchTag)
     
 - intent: get_help
   examples: |
     - Mir geht's grad richtig scheiße
+    - Rat
+    - hilfe
     - Ich brauche Rat
     - Ich suche rat.
     - ich bin gestresst
     - ich brauch hilfe
     - Hilfe!
-    - Ich brauche rat
     - bin anxious
     - ich habe Angst
     - mir gehts nicht gut
+    - ängstlich
 
 - intent: stresslevel
   examples: |
