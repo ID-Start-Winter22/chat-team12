@@ -15,4 +15,4 @@ rules:
 - rule: send crisis number anytime user utters suicidal thoughts
   steps:
   - intent: selbstmordgedanke
-  - action: utter_crisisline
+  - action: utter_crisisLine
