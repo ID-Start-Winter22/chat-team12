@@ -14,6 +14,7 @@ intents:
   - my_name_is
   - get_help
   - stresslevel
+  - selbstmordgedanke
   - get_gif
  
 
@@ -68,6 +69,10 @@ responses:
 
   utter_exercise:
   - text: "Versuch für 4 Sekunden einzuatmen, 7 Sekunden zu halten und 8 Sekunden lang auszuatmen."
+
+  utter_crisisLine:
+  - text: "Wenn es dir sehr schlecht geht, kannst du jederzeit hier anrufen um mit jemandem zu reden, der dir weiterhelfen kann. 0800 / 655 3000"
+
 
 entities:
   - username
