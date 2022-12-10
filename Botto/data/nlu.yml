@@ -39,6 +39,8 @@ nlu:
     - bye bye
     - bb
     - ciao ciao
+    - adios
+    - auf wiedersehen
 
 - intent: indecisive
   examples: |
@@ -69,6 +71,11 @@ nlu:
     - y
     - klar
     - okidoki
+    - oui
+    - si
+    - okay
+    - machen wir
+    - yeah
 
 - intent: deny
   examples: |
@@ -81,6 +88,9 @@ nlu:
     - nicht wirklich
     - kein bock
     - nö
+    - nop
+    - nope
+    - keine lust
 
 - intent: mood_great
   examples: |
@@ -98,6 +108,11 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+    - fantastic
+    - good day
+    - froh
+    - wunderbar
+    - toll
 
 
 - intent: mood_unhappy
@@ -134,6 +149,8 @@ nlu:
     - passt schon
     - ich hab mich etwas beruhigt
     - Ich denke ich kann es jetzt schaffen
+    - viel besser
+    - ja schon
 
 
 - intent: bot_challenge
@@ -151,6 +168,10 @@ nlu:
     - [Theo](username)
     - Ich bin [Ash](username)
     - Hier ist [Tim](username)
+    - Ich heiße [Tina](username)
+    - i am [Tarek](username)
+    - [Tarek](username)
+    - i am your father[Darth Vader](username)
 
 - intent: get_gif
   examples: |
@@ -178,12 +199,15 @@ nlu:
     - ich habe Angst
     - mir gehts nicht gut
     - ängstlich
+    - stress
+    - angst
+    - scared
 
-- intent: stresslevel
+- intent: stresslevel #wir müssen stresslevel in 3 abteilen, stresslevel >30%, stresslevel 30-70, stressleven <70%
   examples: |
-    - 30
-    - 50%
-    - 75 %
-    - 80 prozent
+    - >30%
+    - 30% - 70%
+    - <70%
+    
    
     

@@ -62,13 +62,22 @@ responses:
 
   utter_evaluate:
   - text: "Wie hoch schätzt du deinen Stresspegel auf einer Skala von 0-100% ein?"
+    buttons:
+    - title: ">30%"
+      payload: "30%"
+    - title: "30% - 70%"
+      payload: "30% - 70%"
+    - title: "<70%"
+      payload: "<70%"
+  
 
   utter_exercise_question:
   - text: "Wollen wir eine Atemübung machen, {username}?"
 
   utter_exercise:
-  - text: "Versuch für 4 Sekunden einzuatmen, 7 Sekunden zu halten und 8 Sekunden lang auszuatmen."
-
+  - image: "https://media.giphy.com/media/Ge437N2sMm2Zhy7XUL/giphy-downsized.gif"
+    text: "Versuch für 4 Sekunden einzuatmen, 7 Sekunden zu halten und 8 Sekunden lang auszuatmen."
+ 
 entities:
   - username
   - searchTag
