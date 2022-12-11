@@ -175,7 +175,7 @@ nlu:
 
 - intent: get_gif
   examples: |
-    - Ich suche [Ryan Gosling](searchTag)
+    - Ich suche [cute animals](searchTag)
     - Gib mir [mentale Gesundheit](searchTag)
     - Zeig mir [süße Hunde](searchTag)
     - Zeigst du mir [funny cats](searchTag)
@@ -184,6 +184,7 @@ nlu:
     - Ich will einen [Pokemon](searchTag)
     - zeig mir [Salamander Pokemon](searchTag)
     - ich will [Katzen](searchTag)
+    - [süße Tiere](searchTag)
     
 - intent: get_help
   examples: |
@@ -210,4 +211,14 @@ nlu:
     - <70%
     
    
-    
+- intent: selbstmordgedanke
+  examples: |
+    - ich möchte sterben
+    - Ich überlege, mich umzubringen
+    - ich will nicht mehr leben
+    - ich wünschte ich wäre tot
+    - Tod
+    - I want to die
+    - i don't wanna live anymore
+    - i dont wanna live
+    - I dun want to keep on living    
