@@ -49,33 +49,6 @@ class ActionHAskWithName(Action):
 
         return []
 
-class ActionStoreUserSkills(Action):
-
-     def skill(self) -> Text:
-         return "action_store_skill"
-         
-
-     def run(self, dispatcher, tracker, domain):
-        skill = tracker.get_slot("skill")
-        print("Sender ID: ", tracker.sender_id)
-
-        return []
-
-
-class ActionUserName(Action):
-
-     def skill(self) -> Text:
-         return "action_get_skill"
-
-     def run(self, dispatcher, tracker, domain):
-        skill = tracker.get_slot("skill")
-        if not skill :
-            dispatcher.utter_message(" Du hast noch keine skills eingetragen.")
-        else:
-            dispatcher.utter_message(' Du hast {} als skill eingetragen'.format(skill))
-
-        return []
-
 
 class ActionGetGiphyGif(Action):
 
