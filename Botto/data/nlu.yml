@@ -171,7 +171,7 @@ nlu:
     - Ich heiße [Tina](username)
     - i am [Tarek](username)
     - [Tarek](username)
-    - i am your father[Darth Vader](username)
+    - i am your [father](username)
 
 - intent: get_gif
   examples: |
@@ -185,6 +185,7 @@ nlu:
     - zeig mir [Salamander Pokemon](searchTag)
     - ich will [Katzen](searchTag)
     - [süße Tiere](searchTag)
+    - zeig mir bitte [family guy](searchTag)
     
 - intent: get_help
   examples: |
