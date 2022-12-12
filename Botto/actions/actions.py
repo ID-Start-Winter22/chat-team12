@@ -49,6 +49,7 @@ class ActionHAskWithName(Action):
 
         return []
 
+
 class ActionGetGiphyGif(Action):
 
     def name(self) -> Text:
