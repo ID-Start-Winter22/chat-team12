@@ -8,8 +8,13 @@ stories:
   - action: utter_greet
   - intent: my_name_is
   - action: action_get_name
-  - action: utter_greet_with_name 
- 
+  - action: utter_greet_with_name #wieso die story nich hier beenden???
+  # - intent: mood_unhappy 
+  # - action: utter_evaluate
+  # - intent: stresslevel
+  # - action: utter_exercise_question
+  # - intent: affirm
+  # - action: utter_exercise
 
 
 - story: sad path 
