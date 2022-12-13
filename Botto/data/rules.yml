@@ -19,7 +19,5 @@ rules:
 
   - rule: evaluate when user is sad or asks for help
   steps:
-  - or:
-    - intent: mood_unhappy
-    - intent: get_help
+  - intent: mood_unhappy
   - action: utter_evaluate
