@@ -23,6 +23,7 @@ stories:
   - checkpoint: ask_Atemübung
   - intent: affirm
   - action: utter_exercise
+  - action: utter_donebutton
   - intent: done
   - action: utter_did_that_help
   - intent: mood_better
