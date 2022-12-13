@@ -80,7 +80,7 @@ responses:
 
   utter_donebutton:
     buttons:
-     - title: "done"
+    - title: "done"
       payload: "/done"
 
   utter_askleave:
