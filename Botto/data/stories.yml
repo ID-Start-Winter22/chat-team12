@@ -12,9 +12,9 @@ stories:
 
 - story: help_path (niedrige und mittlere Anspannung)
   steps:
-  - intent: niedrigeAnspannung
   - or:
-  - intent: mittlereAnspannung
+    - intent: niedrigeAnspannung
+    - intent: mittlereAnspannung
   - action: utter_exercise_question
   - checkpoint: ask_Atemübung
 
