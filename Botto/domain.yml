@@ -65,11 +65,11 @@ responses:
   - text: "Wie hoch schätzt du deinen Stresspegel auf einer Skala von 0-100% ein?"
     buttons:
     - title: "<30%"
-      payload: "/niedrigeAnspannung"
+      payload: /niedrigeAnspannung
     - title: "30% - 70%"
-      payload: "/mittlereAnspannung"
+      payload: /mittlereAnspannung
     - title: ">70%"
-      payload: "/hoheAnspannung"
+      payload: /hoheAnspannung
 
   utter_exercise_question:
   - text: "Wollen wir gemeinsam eine Atemübung machen?"
@@ -79,7 +79,7 @@ responses:
     text: "Versuche für 4 Sekunden einzuatmen, 7 Sekunden zu halten und 8 Sekunden lang auszuatmen."
     buttons:
     - title: "done"
-      payload: "/done"
+      payload: /done
   
 
   utter_askleave:
