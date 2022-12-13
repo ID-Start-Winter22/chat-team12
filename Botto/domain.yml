@@ -18,6 +18,7 @@ intents:
   - niedrigeAnspannung
   - mittlereAnspannung
   - hoheAnspannung
+  - done
 
  
 
@@ -76,6 +77,11 @@ responses:
   utter_exercise:
   - image: "https://media.giphy.com/media/Ge437N2sMm2Zhy7XUL/giphy-downsized.gif"
     text: "Versuche für 4 Sekunden einzuatmen, 7 Sekunden zu halten und 8 Sekunden lang auszuatmen."
+
+  utter_donebutton:
+    buttons:
+     - title: "done"
+      payload: "/done"
 
   utter_askleave:
   - text: "Kannst du die Situation verlassen?"
