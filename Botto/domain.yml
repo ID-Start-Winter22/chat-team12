@@ -78,7 +78,7 @@ responses:
     text: "Versuche für 4 Sekunden einzuatmen, 7 Sekunden zu halten und 8 Sekunden lang auszuatmen."
 
   utter_askleave:
-  - text: "Kannst du aus die Situation verlassen?"
+  - text: "Kannst du die Situation verlassen?"
 
   utter_chillout:
   - text: "Versuche etwas Abstand zu bekommen, damit du dich wieder sortieren kannst." #nur draft
@@ -87,7 +87,7 @@ responses:
   - text: "In solchen Momenten können wir Skills nutzen, welche uns helfen können, die Hochstresssituation auszuhalten oder abzumildern." #nur draft
   
   utter_stresstoleranz_skills:
-  - text: "hier verschiedene Stresstoleranz-skills einfügen?" #draft
+  - text: "[hier verschiedene Stresstoleranz-skills einfügen]" #draft
  
   utter_crisisLine:
   - text: "Wenn es dir sehr schlecht geht, kannst du jederzeit hier anrufen um mit jemandem zu reden, der dir weiterhelfen kann. 0800 / 655 3000"
