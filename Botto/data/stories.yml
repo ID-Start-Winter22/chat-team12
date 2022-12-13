@@ -8,21 +8,19 @@ stories:
   - action: utter_greet
   - intent: my_name_is
   - action: action_get_name
-  - action: utter_greet_with_name #wieso die story nich hier beenden???
-  # - intent: mood_unhappy 
-  # - action: utter_evaluate
-  # - intent: stresslevel
-  # - action: utter_exercise_question
-  # - intent: affirm
-  # - action: utter_exercise
+  - action: utter_greet_with_name 
 
-
-- story: sad path 
+- story: help_path (niedrige und mittlere Anspannung)
   steps:
-  - intent: mood_unhappy
-  - action: utter_evaluate
-  - intent: stresslevel
+  - intent: niedrigeAnspannung
+  - or:
+  - intent: mittlereAnspannung
   - action: utter_exercise_question
+  - checkpoint: ask_Atemübung
+
+- story: user wants to do breathing exercise
+  steps:
+  - checkpoint: ask_Atemübung
   - intent: affirm
   - action: utter_exercise
   - intent: affirm
@@ -31,27 +29,37 @@ stories:
   - action: utter_relieved
   - action: utter_goodbye
 
-
-
-- story: help path
+- story: user doesn't want to do breathing exercise
   steps:
-  - intent: get_help
-  - action: utter_evaluate
-  - intent: stresslevel
-  - action: utter_exercise_question
+  - checkpoint: ask_Atemübung
+  - intent: deny
+  - action: utter_distract
+
+- story: help_path (hohe Anspannung)
+  steps:
+  - intent: hoheAnspannung
+  - action: utter_askleave
+  - checkpoint: ask_leave
+
+- story: user can leave the situation
+  steps:
+  - checkpoint: ask_leave
   - intent: affirm
-  - action: utter_exercise
-  - intent: affirm
-  - action: utter_did_that_help
-  - intent: mood_better
   - action: utter_relieved
-  - action: utter_goodbye
+  - action: utter_chillout
+
+- story: user can't leave the situation
+  steps:
+  - checkpoint: ask_leave
+  - intent: deny
+  - action: utter_stresstoleranz
+  - action: utter_stresstoleranz_skills
+
+
 
 
 - story: how do i feel (positive path)
   steps:
-  - intent: greet_hi
-  - action: action_ask_with_name
   - intent: indecisive
   - action: utter_lets_find_out_tgt
   - intent: affirm

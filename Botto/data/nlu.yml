@@ -16,15 +16,13 @@ nlu:
     - gutenmorgen
     - gutenabend
     - servus
-
-- intent: greet_hi
-  examples: |
     - ey
     - hey botto
     - botto otto
     - hi bottchen
     - hallo botto
     - hiii
+
 
 - intent: goodbye
   examples: |
@@ -204,12 +202,6 @@ nlu:
     - stress
     - angst
     - scared
-
-- intent: stresslevel #wir müssen stresslevel in 3 unterschiedsliche intents abteilen, stresslevel >30%, stresslevel 30-70, stressleven <70%
-  examples: |
-    - <30%
-    - 30% - 70%
-    - >70%
     
    
 - intent: selbstmordgedanke
