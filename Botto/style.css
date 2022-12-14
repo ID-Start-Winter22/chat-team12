@@ -20,17 +20,11 @@ body {
 
 .wrapper{
     max-width: 1256px;
-    margin: 0 auto;
+    margin: 20px auto;
     
 
 }
 /* Header */
-
-header{
-    background: linear-gradient(308.17deg, #FFE03B -24.97%, rgba(255, 241, 164, 0.462314) 22.28%, rgba(255, 243, 180, 0.382157) 29.09%, rgba(255, 243, 178, 0.390334) 40.3%, rgba(255, 245, 191, 0.327908) 47.03%, rgba(255, 247, 206, 0.248262) 55.94%, rgba(255, 250, 224, 0.155821) 62.88%, rgba(255, 248, 209, 0.232221) 89.28%, rgba(255, 255, 255, 0) 102.98%);
-    height: 100vh;
-    width: 100%;
-}
 
 nav{
     display: flex;
@@ -62,18 +56,3 @@ nav ul li a{
 
 }
 
-.hero-section {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-
-
-}
-
-.left {
-
-    position: left
-
-}
