@@ -2,7 +2,6 @@ version: "3.0"
 
 intents:
   - greet
-  - greet_hi
   - goodbye
   - indecisive
   - affirm
@@ -12,10 +11,15 @@ intents:
   - mood_better
   - bot_challenge
   - my_name_is
-  - get_help
-  - stresslevel
+  
   - selbstmordgedanke
   - get_gif
+
+  - niedrigeAnspannung
+  - mittlereAnspannung
+  - hoheAnspannung
+
+
  
 
 actions:
@@ -40,10 +44,6 @@ responses:
   utter_support_response:
   - text: "Das klingt wirklich toll. Ist auch etwas passiert, das du weniger gut fandest?"
 
-#  utter_cheer_up:
-#  - text: "Hier ist etwas um dich aufzumuntern:"
-#    image: "https://i.imgur.com/nGF1K8f.jpg"
-
   utter_did_that_help:
   - text: "Wie fühlst du dich jetzt?"
 
@@ -65,11 +65,11 @@ responses:
   - text: "Wie hoch schätzt du deinen Stresspegel auf einer Skala von 0-100% ein?"
     buttons:
     - title: "<30%"
-      payload: "30%"
+      payload: /niedrigeAnspannung
     - title: "30% - 70%"
-      payload: "30% - 70%"
+      payload: /mittlereAnspannung
     - title: ">70%"
-      payload: ">70%"
+      payload: /hoheAnspannung
 
   utter_exercise_question:
   - text: "Wollen wir gemeinsam eine Atemübung machen?"
@@ -77,9 +77,24 @@ responses:
   utter_exercise:
   - image: "https://media.giphy.com/media/Ge437N2sMm2Zhy7XUL/giphy-downsized.gif"
     text: "Versuche für 4 Sekunden einzuatmen, 7 Sekunden zu halten und 8 Sekunden lang auszuatmen."
+
+  utter_askleave:
+  - text: "Kannst du die Situation verlassen?"
+
+  utter_chillout:
+  - text: "Versuche etwas Abstand zu bekommen, damit du dich wieder sortieren kannst." #nur draft
+
+  utter_stresstoleranz:
+  - text: "In solchen Momenten können wir Skills nutzen, welche uns helfen können, die Hochstresssituation auszuhalten oder abzumildern." #nur draft
+  
+  utter_stresstoleranz_skills:
+  - text: "[hier verschiedene Stresstoleranz-skills einfügen]" #draft
  
   utter_crisisLine:
   - text: "Wenn es dir sehr schlecht geht, kannst du jederzeit hier anrufen um mit jemandem zu reden, der dir weiterhelfen kann. 0800 / 655 3000"
+
+  utter_distract:
+  - text: "möchtest du lieber abgelenkt werden?"
 
   utter_default:
   - text: Tut mir leid, das habe ich so nicht verstanden. Kannst du das vielleicht nochmal umformulieren ʕ ˵• ₒ •˵ʔ ?

@@ -16,3 +16,8 @@ rules:
   steps:
   - intent: selbstmordgedanke
   - action: utter_crisisLine
+
+- rule: evaluate when user is sad or asks for help
+  steps:
+  - intent: mood_unhappy
+  - action: utter_evaluate

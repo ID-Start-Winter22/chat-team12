@@ -16,15 +16,13 @@ nlu:
     - gutenmorgen
     - gutenabend
     - servus
-
-- intent: greet_hi
-  examples: |
     - ey
     - hey botto
     - botto otto
     - hi bottchen
     - hallo botto
     - hiii
+
 
 - intent: goodbye
   examples: |
@@ -138,6 +136,21 @@ nlu:
     - schlecht
     - beschissen
     - immer noch ziemlich sad
+    - Mir geht's grad richtig scheiße
+    - Rat
+    - hilfe
+    - Ich brauche Rat
+    - Ich suche rat.
+    - ich bin gestresst
+    - ich brauch hilfe
+    - Hilfe!
+    - bin anxious
+    - ich habe Angst
+    - mir gehts nicht gut
+    - ängstlich
+    - stress
+    - angst
+    - scared
 
 - intent: mood_better
   examples: |
@@ -187,29 +200,7 @@ nlu:
     - [süße Tiere](searchTag)
     - zeig mir bitte [family guy](searchTag)
     
-- intent: get_help
-  examples: |
-    - Mir geht's grad richtig scheiße
-    - Rat
-    - hilfe
-    - Ich brauche Rat
-    - Ich suche rat.
-    - ich bin gestresst
-    - ich brauch hilfe
-    - Hilfe!
-    - bin anxious
-    - ich habe Angst
-    - mir gehts nicht gut
-    - ängstlich
-    - stress
-    - angst
-    - scared
 
-- intent: stresslevel #wir müssen stresslevel in 3 unterschiedsliche intents abteilen, stresslevel >30%, stresslevel 30-70, stressleven <70%
-  examples: |
-    - <30%
-    - 30% - 70%
-    - >70%
     
    
 - intent: selbstmordgedanke
