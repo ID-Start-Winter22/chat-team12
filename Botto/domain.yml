@@ -26,6 +26,7 @@ actions:
   - action_get_name
   - action_ask_with_name
   - action_get_gif
+  - action_get_stresslevel
 
 responses:
   utter_greet:
@@ -74,7 +75,7 @@ responses:
   utter_exercise_question:
   - text: "Wollen wir gemeinsam eine Atemübung machen?"
 
-  utter_exercise:
+  utter_exercise_medium:
   - image: "https://media.giphy.com/media/Ge437N2sMm2Zhy7XUL/giphy-downsized.gif"
     text: "Versuche für 4 Sekunden einzuatmen, 7 Sekunden zu halten und 8 Sekunden lang auszuatmen."
 
@@ -102,6 +103,7 @@ responses:
 entities:
   - username
   - searchTag
+  - stresslevel
 
 slots:
   username:
@@ -116,6 +118,16 @@ slots:
     mappings:
     - type: from_entity
       entity: searchTag
+  stresslevel:
+    type: categorical
+    influence_conversation: true
+    values:
+      - low
+      - medium
+      - high
+    mappings:
+    - type: from_entity
+      entity: stresslevel
 
 session_config:
   session_expiration_time: 60
