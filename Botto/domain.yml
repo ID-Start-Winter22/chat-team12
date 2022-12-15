@@ -37,6 +37,8 @@ responses:
   utter_greet:
   - text: "Hallo, hier ist Botto ʕ •ᴥ•ʔ ."
     image: "https://user-images.githubusercontent.com/114647698/203575779-469b2361-961c-443b-8513-8aa337d88b43.png"
+  - text: "Hi, Botto hier! 😄"
+    image: "https://user-images.githubusercontent.com/114647698/203575779-469b2361-961c-443b-8513-8aa337d88b43.png"
 
   utter_response:
   - text: "Hallo! Wie geht es dir ʕ •ᴥ•ʔ ?"
@@ -52,17 +54,20 @@ responses:
 
   utter_did_that_help:
   - text: "Wie fühlst du dich jetzt?"
+  - text: "Magst du mir sagen wie du dich jetzt fühlst?"
+  - text: "Wie geht es dir jetzt?"
 
   utter_relieved:
   - text: "Das ist schön!"
+  - text: "Das freut mich!🐻"
 
   utter_goodbye:
   - text: "Bis bald ʕ•ᴥ•ʔﾉ♡"
   - text: "Bis zum nächsten mal ʕ•ᴥ•ʔﾉ♡"
-  - text: "Melde dich gerne wieder wenn du meine Hilfe brauchst"
+  - text: "Melde dich gerne wieder wenn du meine Hilfe brauchst😊"
   
   utter_iamabot:
-  - text: "Ich bin ein Chatbot, der gebaut wurde um dir in deinem Alltag zu helfen wenn es dir nicht gut geht!"
+  - text: "Ich bin ein Chatbot, der gebaut wurde um dir in deinem Alltag zu helfen wenn es dir nicht gut geht! 😄"
 
   utter_greet_with_name:
   - text: "Hallo, {username}. Wie geht es dir?"
@@ -121,7 +126,7 @@ responses:
         payload: langsam ablenken
 
   utter_movies:
-  - text: "Ich kann dir folgendes empfehlen: einen Film schauen, spazieren gehen, kochen, putzen, lesen"
+  - text: "Ich kann dir folgendes empfehlen: einen Film schauen🎬, spazieren gehen🚶🏾, kochen🍽, putzen🧹, lesen📕"
 
 entities:
   - username

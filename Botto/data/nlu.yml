@@ -200,6 +200,8 @@ nlu:
     - [süße Tiere](searchTag)
     - zeig mir bitte [family guy](searchTag)
     - zeig mir [cute dogs](searchTag)
+    - [calming waves]
+    - zeig mir ein [fractal]
     
 
     
@@ -214,7 +216,12 @@ nlu:
     - I want to die
     - i don't wanna live anymore
     - i dont wanna live
-    - I dun want to keep on living    
+    - I dun want to keep on living 
+    - i wanna kms
+    - ich bring mich um
+    - ich will sterben
+    - ich kann nicht mehr
+    - ich will nicht mehr   
 
 - intent: ablenkung
   examples: |
