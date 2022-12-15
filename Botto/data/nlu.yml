@@ -214,3 +214,20 @@ nlu:
     - i don't wanna live anymore
     - i dont wanna live
     - I dun want to keep on living    
+
+- intent: ablenkung
+  examples: |
+    - ich brauche ablenkung
+    - ich brauche unterhaltung
+    - mir ist langweilig 
+    - kannst du mich ablenken
+    - ich möchte an etwas anderes denken
+    - lenk mich ab 
+
+- intent: Schnell_ablenken
+  examples: |
+    - schnell ablenken 
+
+- intent: langsam_ablenken
+  examples: |
+    - langsam ablenken 

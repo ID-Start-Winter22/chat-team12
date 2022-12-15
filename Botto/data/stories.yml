@@ -77,3 +77,18 @@ stories:
   - intent: mood_better
   - action: utter_relieved
   - action: utter_goodbye
+
+- story: zeit
+  steps:
+  - intent: Schnell_ablenken
+  - action: action_get_gif
+  - action: utter_did_that_help
+  - intent: mood_better
+  - action: utter_relieved
+  - action: utter_goodbye
+
+- story: keine zeit
+  steps:
+  - intent: langsam_ablenken
+  - action: utter_movies
+  - action: utter_did_that_help

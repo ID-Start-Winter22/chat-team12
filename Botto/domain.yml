@@ -19,6 +19,10 @@ intents:
   - mittlereAnspannung
   - hoheAnspannung
 
+  - Schnell_ablenken
+  - langsam_ablenken
+  - ablenkung
+
 
  
 
@@ -98,6 +102,17 @@ responses:
 
   utter_default:
   - text: Tut mir leid, das habe ich so nicht verstanden. Kannst du das vielleicht nochmal umformulieren ʕ ˵• ₒ •˵ʔ ?
+
+  utter_ask_for_time:
+  - text: "ok, soll es schnell gehen oder hast du Zeit ?"
+    buttons:
+      - title: "schnell"
+        payload: schnell ablenken
+      - title: "ich habe Zeit"
+        payload: langsam ablenken
+
+  utter_movies:
+  - text: "Ich kann dir folgendes empfehlen: einen Film schauen, spazieren gehen, kochen, putzen, lesen"
 
 entities:
   - username

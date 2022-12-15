@@ -21,3 +21,8 @@ rules:
   steps:
   - intent: mood_unhappy
   - action: utter_evaluate
+
+- rule: ask for time anytime ablenkung is needed
+  steps:
+  - intent: ablenkung
+  - action: utter_ask_for_time
