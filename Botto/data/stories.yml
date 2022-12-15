@@ -7,8 +7,8 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: my_name_is
-  - action: action_get_name
-  - action: utter_greet_with_name 
+  - action: action_ask_with_name
+  - intent: mood_ great
 
 - story: help_path (niedrige und mittlere Anspannung)
   steps:

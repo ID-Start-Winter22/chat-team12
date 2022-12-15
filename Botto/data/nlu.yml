@@ -199,6 +199,7 @@ nlu:
     - ich will [Katzen](searchTag)
     - [süße Tiere](searchTag)
     - zeig mir bitte [family guy](searchTag)
+    - zeig mir [cute dogs](searchTag)
     
 
     

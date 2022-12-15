@@ -27,6 +27,7 @@ actions:
   - action_ask_with_name
   - action_get_gif
   - action_get_stresslevel
+  - action_default_fallback
 
 responses:
   utter_greet:
@@ -90,16 +91,22 @@ responses:
   - text: "In solchen Momenten können wir Skills nutzen, welche uns helfen können, die Hochstresssituation auszuhalten oder abzumildern." #nur draft
   
   utter_stresstoleranz_skills:
-  - text: "[hier verschiedene Stresstoleranz-skills einfügen]" #draft
+  - text: "Shuffle 3 Mal in deiner Mediathek und hör dir das Lied bis zum Schluss an! Wie wärs damit?"
+  - text: "Willst du mal um dich herum schauen und 5 blaue Dinge finden?"
+  - text: "Stell dir mal vor, was du einer Person, die du gern hast, sagen würdest, wenn sie sich in derselben Situation befinden würde, OK?"
+  - text: "Willst du mal etwas singen?"
+  - text: "Was hältst du davon, wenn du mal in 7er Schritten von 100 bis 0 runterzählst?" #draft
  
   utter_crisisLine:
   - text: "Wenn es dir sehr schlecht geht, kannst du jederzeit hier anrufen um mit jemandem zu reden, der dir weiterhelfen kann. 0800 / 655 3000"
+  utter_link:
+  - text: "https://www.krisendienste.bayern/oberbayern/"
 
   utter_distract:
   - text: "möchtest du lieber abgelenkt werden?"
 
   utter_default:
-  - text: Tut mir leid, das habe ich so nicht verstanden. Kannst du das vielleicht nochmal umformulieren ʕ ˵• ₒ •˵ʔ ?
+  - text: "Tut mir leid, das habe ich so nicht verstanden. Kannst du das vielleicht nochmal umformulieren ʕ ˵• ₒ •˵ʔ ?"
 
 entities:
   - username
