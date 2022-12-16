@@ -86,7 +86,7 @@ responses:
   - text: "Wollen wir gemeinsam eine Atemübung machen?"
   - text: "Wollen wir gemeinsam eine Übung machen?"
 
-  utter_exercise_medium:
+  utter_exercise:
   - image: "https://media.giphy.com/media/Ge437N2sMm2Zhy7XUL/giphy-downsized.gif"
     text: "Versuche für 4 Sekunden einzuatmen, 7 Sekunden zu halten und 8 Sekunden lang auszuatmen."
 
