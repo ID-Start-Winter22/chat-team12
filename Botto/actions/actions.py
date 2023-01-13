@@ -32,7 +32,7 @@ class ActionUserName(Action):
         print("Sender ID: ", tracker.sender_id)
         return []
 
-class ActionHAskWithName(Action):
+class ActionAskWithName(Action):
 
     def name(self) -> Text:
         return "action_ask_with_name"
@@ -80,3 +80,55 @@ class ActionGetGiphyGif(Action):
 
         dispatcher.utter_message(image=image_url)
         return []
+
+# class ActionStresslevel(Action):
+
+#      def name(self) -> Text:
+#          return "action_get_stresslevel"
+
+#      def run(self, dispatcher, tracker, domain):
+#         stresslevel = tracker.get_slot("stresslevel")
+#         if stresslevel == "low" :
+#             dispatcher.utter_message('Dein Stresslevel ist {}'.format(stresslevel))
+#         elif stresslevel == "medium":
+#             dispatcher.utter_message(' Dein Stresslevel ist {}'.format(stresslevel))
+#         else:
+#             dispatcher.utter_message(' Dein Stresslevel ist {}'.format(stresslevel))    
+    
+        
+#         print("Sender ID: ", tracker.sender_id)
+#         return []
+
+# class ActionDefaultFallback(Action):
+    #Executes the fallback action and goes back to the previous state
+    #of the dialogue
+
+    # def name(self) -> Text:
+    #     return ACTION_DEFAULT_FALLBACK_NAME
+
+    # async def run(
+    #     self,
+    #     dispatcher: CollectingDispatcher,
+    #     tracker: Tracker,
+    #     domain: Dict[Text, Any],
+    # ) -> List[Dict[Text, Any]]:
+    #     dispatcher.utter_message(template="my_custom_fallback_template")
+
+    #     #Revert user message which led to fallback.
+    #     return [UserUtteranceReverted()]
+#     #Executes the fallback action and goes back to the previous state
+#     #of the dialogue
+
+#     def name(self) -> Text:
+#         return "action_default_fallback"
+
+#     async def run(
+#         self,
+#         dispatcher: CollectingDispatcher,
+#         tracker: Tracker,
+#         domain: Dict[Text, Any],
+#     ) -> List[Dict[Text, Any]]:
+#         dispatcher.utter_message("Tut mir leid, das habe ich so nicht verstanden. Kannst du das vielleicht nochmal umformulieren ʕ ˵• ₒ •˵ʔ ?")
+
+#         #Revert user message which led to fallback.
+#         return []

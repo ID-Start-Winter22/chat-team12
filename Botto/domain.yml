@@ -19,6 +19,10 @@ intents:
   - mittlereAnspannung
   - hoheAnspannung
 
+  - Schnell_ablenken
+  - langsam_ablenken
+  - ablenkung
+
 
  
 
@@ -26,10 +30,14 @@ actions:
   - action_get_name
   - action_ask_with_name
   - action_get_gif
+  - action_get_stresslevel
+  - action_default_fallback
 
 responses:
   utter_greet:
   - text: "Hallo, hier ist Botto ʕ •ᴥ•ʔ ."
+    image: "https://user-images.githubusercontent.com/114647698/203575779-469b2361-961c-443b-8513-8aa337d88b43.png"
+  - text: "Hi, Botto hier! 😄"
     image: "https://user-images.githubusercontent.com/114647698/203575779-469b2361-961c-443b-8513-8aa337d88b43.png"
 
   utter_response:
@@ -39,24 +47,27 @@ responses:
   - text: "Wollen wir es gemeinsam herausfinden?"
 
   utter_did_smth_happen:
-  - text: "Ist heute etwas passiert, was dich besonders gefreut hat?"
+  - text: "Ist heute etwas passiert, das dich besonders gefreut hat?"
 
   utter_support_response:
   - text: "Das klingt wirklich toll. Ist auch etwas passiert, das du weniger gut fandest?"
 
   utter_did_that_help:
   - text: "Wie fühlst du dich jetzt?"
+  - text: "Magst du mir sagen wie du dich jetzt fühlst?"
+  - text: "Wie geht es dir jetzt?"
 
   utter_relieved:
   - text: "Das ist schön!"
+  - text: "Das freut mich!🐻"
 
   utter_goodbye:
   - text: "Bis bald ʕ•ᴥ•ʔﾉ♡"
   - text: "Bis zum nächsten mal ʕ•ᴥ•ʔﾉ♡"
-  - text: "Melde dich gerne wieder wenn du meine Hilfe brauchst"
+  - text: "Melde dich gerne wieder wenn du meine Hilfe brauchst😊"
   
   utter_iamabot:
-  - text: "Ich bin ein Chatbot, der gebaut wurde um dir in deinem Alltag zu helfen wenn es dir nicht gut geht!"
+  - text: "Ich bin ein Chatbot, der gebaut wurde um dir in deinem Alltag zu helfen wenn es dir nicht gut geht! 😄"
 
   utter_greet_with_name:
   - text: "Hallo, {username}. Wie geht es dir?"
@@ -73,6 +84,7 @@ responses:
 
   utter_exercise_question:
   - text: "Wollen wir gemeinsam eine Atemübung machen?"
+  - text: "Wollen wir gemeinsam eine Übung machen?"
 
   utter_exercise:
   - image: "https://media.giphy.com/media/Ge437N2sMm2Zhy7XUL/giphy-downsized.gif"
@@ -88,20 +100,38 @@ responses:
   - text: "In solchen Momenten können wir Skills nutzen, welche uns helfen können, die Hochstresssituation auszuhalten oder abzumildern." #nur draft
   
   utter_stresstoleranz_skills:
-  - text: "[hier verschiedene Stresstoleranz-skills einfügen]" #draft
+  - text: "Shuffle 3 Mal in deiner Mediathek und hör dir das Lied bis zum Schluss an! Wie wärs damit?"
+  - text: "Willst du mal um dich herum schauen und 5 blaue Dinge finden?"
+  - text: "Stell dir mal vor, was du einer Person, die du gern hast, sagen würdest, wenn sie sich in derselben Situation befinden würde, OK?"
+  - text: "Willst du mal etwas singen?"
+  - text: "Was hältst du davon, wenn du mal in 7er Schritten von 100 bis 0 runterzählst?" #draft
  
   utter_crisisLine:
   - text: "Wenn es dir sehr schlecht geht, kannst du jederzeit hier anrufen um mit jemandem zu reden, der dir weiterhelfen kann. 0800 / 655 3000"
+  utter_link:
+  - text: "https://www.krisendienste.bayern/oberbayern/"
 
   utter_distract:
   - text: "möchtest du lieber abgelenkt werden?"
 
   utter_default:
-  - text: Tut mir leid, das habe ich so nicht verstanden. Kannst du das vielleicht nochmal umformulieren ʕ ˵• ₒ •˵ʔ ?
+  - text: "Tut mir leid, das habe ich so nicht verstanden. Kannst du das vielleicht nochmal umformulieren ʕ ˵• ₒ •˵ʔ ?"
+
+  utter_ask_for_time:
+  - text: "ok, soll es schnell gehen oder hast du Zeit ?"
+    buttons:
+      - title: "schnell"
+        payload: schnell ablenken
+      - title: "ich habe Zeit"
+        payload: langsam ablenken
+
+  utter_movies:
+  - text: "Ich kann dir folgendes empfehlen: einen Film schauen🎬, spazieren gehen🚶🏾, kochen🍽, putzen🧹, lesen📕"
 
 entities:
   - username
   - searchTag
+  # - stresslevel
 
 slots:
   username:
@@ -116,6 +146,16 @@ slots:
     mappings:
     - type: from_entity
       entity: searchTag
+  # stresslevel:
+  #   type: categorical
+  #   influence_conversation: true
+  #   values:
+  #     - low
+  #     - medium
+  #     - high
+  #   mappings:
+  #   - type: from_entity
+  #     entity: stresslevel
 
 session_config:
   session_expiration_time: 60

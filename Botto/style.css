@@ -16,6 +16,10 @@
 body {
     margin: 0;
     font-family: "Quicksand", sans-serif;
+    background-color: antiquewhite;
+    background-image: url(bottoicon.png);
+    background-repeat: no-repeat;
+    background-position: 370px 210px;
 }
 
 .wrapper{
@@ -39,14 +43,14 @@ nav .logo{
 nav ul {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
     list-style: none;
     margin:0;
 
 }
 
 nav ul li a{
-    font-family: "Quicksand", sans-serif;
+    font-family: "Futura", sans-serif;
 
     font-weight: 500;
     font-size: 20px;
