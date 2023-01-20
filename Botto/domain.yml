@@ -37,7 +37,7 @@ responses:
   utter_greet:
   - text: "Hallo, hier ist Botto ʕ •ᴥ•ʔ ."
     image: "https://user-images.githubusercontent.com/114647698/203575779-469b2361-961c-443b-8513-8aa337d88b43.png"
-  - text: "Hi, Botto hier! 😄"
+  - text: "Hi, Botto hier! ʕ •ᴥ•ʔ "
     image: "https://user-images.githubusercontent.com/114647698/203575779-469b2361-961c-443b-8513-8aa337d88b43.png"
 
   utter_response:
@@ -59,15 +59,15 @@ responses:
 
   utter_relieved:
   - text: "Das ist schön!"
-  - text: "Das freut mich!🐻"
+  - text: "Das freut mich!"
 
   utter_goodbye:
   - text: "Bis bald ʕ•ᴥ•ʔﾉ♡"
   - text: "Bis zum nächsten mal ʕ•ᴥ•ʔﾉ♡"
-  - text: "Melde dich gerne wieder wenn du meine Hilfe brauchst😊"
+  - text: "Melde dich gerne wieder wenn du meine Hilfe brauchst ʕ•ᴥ•ʔﾉ♡"
   
   utter_iamabot:
-  - text: "Ich bin ein Chatbot, der gebaut wurde um dir in deinem Alltag zu helfen wenn es dir nicht gut geht! 😄"
+  - text: "Ich bin ein Chatbot, der gebaut wurde um dir in deinem Alltag zu helfen wenn es dir nicht gut geht!"
 
   utter_greet_with_name:
   - text: "Hallo, {username}. Wie geht es dir?"
