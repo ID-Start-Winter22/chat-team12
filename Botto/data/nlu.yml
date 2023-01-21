@@ -1,6 +1,15 @@
 version: "3.0"
 
 nlu:
+
+- intent: chitchat
+  examples: |
+    - wie geht es dir?
+    - Wie geht's wie steht's?
+    - was geht ab
+    - how are you
+    - how r u
+    
 - intent: greet
   examples: |
     - hey

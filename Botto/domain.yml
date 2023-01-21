@@ -1,6 +1,7 @@
 version: "3.0"
 
 intents:
+  - chitchat
   - greet
   - goodbye
   - indecisive
@@ -30,10 +31,14 @@ actions:
   - action_get_name
   - action_ask_with_name
   - action_get_gif
-  - action_get_stresslevel
-  - action_default_fallback
+#  - action_get_stresslevel
+#  - action_default_fallback
 
 responses:
+
+  utter_chitchat:
+  - text: "Ich fühle mich ganz gut, wie geht es dir gerade?"
+  
   utter_greet:
   - text: "Hallo, hier ist Botto ʕ •ᴥ•ʔ ."
     image: "https://user-images.githubusercontent.com/114647698/203575779-469b2361-961c-443b-8513-8aa337d88b43.png"
@@ -114,7 +119,7 @@ responses:
   utter_distract:
   - text: "möchtest du lieber abgelenkt werden?"
 
-  utter_default:
+  utter_rephrase:
   - text: "Tut mir leid, das habe ich so nicht verstanden. Kannst du das vielleicht nochmal umformulieren ʕ ˵• ₒ •˵ʔ ?"
 
   utter_ask_for_time:
