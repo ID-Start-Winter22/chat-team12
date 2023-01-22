@@ -33,6 +33,8 @@ stories:
   - checkpoint: ask_Atemübung
   - intent: deny
   - action: utter_distract
+  - intent: affirm
+  - action: utter_ask_for_time
 
 - story: help_path (hohe Anspannung)
   steps:
