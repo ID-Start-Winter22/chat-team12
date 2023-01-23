@@ -235,13 +235,13 @@ nlu:
 - intent: ablenkung
   examples: |
     - ich brauche ablenkung
-    - ich brauche unterhaltung
+    - ich möchte unterhaltung
     - mir ist langweilig 
     - kannst du mich ablenken
     - ich möchte an etwas anderes denken
     - lenk mich ab 
 
-- intent: Schnell_ablenken
+- intent: schnell_ablenken
   examples: |
     - schnell ablenken 
 

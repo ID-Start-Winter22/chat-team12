@@ -20,7 +20,7 @@ intents:
   - mittlereAnspannung
   - hoheAnspannung
 
-  - Schnell_ablenken
+  - schnell_ablenken
   - langsam_ablenken
   - ablenkung
 
@@ -126,9 +126,9 @@ responses:
   - text: "ok, soll es schnell gehen oder hast du Zeit ?"
     buttons:
       - title: "schnell"
-        payload: schnell ablenken
+        payload: /schnell_ablenken
       - title: "ich habe Zeit"
-        payload: langsam ablenken
+        payload: /langsam_ablenken
 
   utter_movies:
   - text: "Ich kann dir folgendes empfehlen: einen Film schauen🎬, spazieren gehen🚶🏾, kochen🍽, putzen🧹, lesen📕"

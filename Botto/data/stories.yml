@@ -35,6 +35,7 @@ stories:
   - action: utter_distract
   - intent: affirm
   - action: utter_ask_for_time
+  - checkpoint: ask_time 
 
 - story: help_path (hohe Anspannung)
   steps:
@@ -80,9 +81,17 @@ stories:
   - action: utter_relieved
   - action: utter_goodbye
 
+- story: ask for time anytime ablenkung is needed
+  steps:
+  - intent: ablenkung
+  - action: utter_ask_for_time
+  - checkpoint: ask_time
+
+
 - story: zeit
   steps:
-  - intent: Schnell_ablenken
+  - checkpoint: ask_time 
+  - intent: schnell_ablenken
   - action: action_get_gif
   - action: utter_did_that_help
   - intent: mood_better
@@ -91,6 +100,7 @@ stories:
 
 - story: keine zeit
   steps:
+  - checkpoint: ask_time 
   - intent: langsam_ablenken
   - action: utter_movies
   - action: utter_did_that_help
