@@ -99,7 +99,7 @@ responses:
   - text: "Kannst du die Situation verlassen?"
 
   utter_chillout:
-  - text: "Versuche etwas Abstand zu bekommen, damit du dich wieder sortieren kannst." #nur draft
+  - text: "Versuche etwas Abstand zu bekommen, damit du dich wieder sortieren kannst."
 
   utter_stresstoleranz:
   - text: "In solchen Momenten können wir Skills nutzen, welche uns helfen können, die Hochstresssituation auszuhalten oder abzumildern." #nur draft
@@ -109,7 +109,7 @@ responses:
   - text: "Willst du mal um dich herum schauen und 5 blaue Dinge finden?"
   - text: "Stell dir mal vor, was du einer Person, die du gern hast, sagen würdest, wenn sie sich in derselben Situation befinden würde, OK?"
   - text: "Willst du mal etwas singen?"
-  - text: "Was hältst du davon, wenn du mal in 7er Schritten von 100 bis 0 runterzählst?" #draft
+  - text: "Versuche mal in 7er Schritten von 100 bis 0 runter zu zählen?" 
  
   utter_crisisLine:
   - text: "Wenn es dir sehr schlecht geht, kannst du jederzeit hier anrufen um mit jemandem zu reden, der dir weiterhelfen kann. 0800 / 655 3000"
