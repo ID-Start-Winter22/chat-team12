@@ -117,13 +117,13 @@ responses:
   - text: "https://www.krisendienste.bayern/oberbayern/"
 
   utter_distract:
-  - text: "möchtest du lieber abgelenkt werden?"
+  - text: "Ich könnte dich stattdessen ablenken."
 
   utter_rephrase:
   - text: "Tut mir leid, das habe ich so nicht verstanden. Kannst du das vielleicht nochmal umformulieren ʕ ˵• ₒ •˵ʔ ?"
 
   utter_ask_for_time:
-  - text: "ok, soll es schnell gehen oder hast du Zeit ?"
+  - text: "Soll es schnell gehen oder hast du Zeit ?"
     buttons:
       - title: "schnell"
         payload: /schnell_ablenken
